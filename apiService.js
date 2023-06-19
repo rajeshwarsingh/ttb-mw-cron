@@ -4,7 +4,7 @@ async function sentOSNotification(notiNo) {
 
   console.log("noti get called :@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@", notiNo)
   
-  const apiUrl = `http://localhost:3001/api/notification-cron/${notiNo}`;
+  const apiUrl = `https://ttb-api-nextjs-one.vercel.app/api/notification-cron/${notiNo}`;
 
   try {
     const response = await axios.get(apiUrl,{params:{notiNo}});
